@@ -10,7 +10,7 @@ describe('App', () => {
 
   test('Check that button add two the count', () => {
     render(<App />);
-    const button = screen.getByTestId('buttttttton');
+    const button = screen.getByTestId('button');
     fireEvent.click(button);
     expect(screen.getByTestId('button').textContent).toContain('2');
   });
